@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parth Fitness</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Trochut:wght@700&display=swap" rel="stylesheet">
+    <style>
+            /* css reset  */
+            body{
+                font-family: 'Trochut', cursive;
+                color: white;
+                margin: 0px;
+                padding: 0px;
+                background: url('img/barbell-1839086_1920.jpg');
+                /* height: 2000px; */
+            }
+            .left{
+                display: inline-block;
+                  border: 2px solid red;
+                  position:absolute;
+                  left: 6px;
+                  top:-14px;
+                  padding: 12px;
+            }
+            .mid{
+                border: 2px solid green;
+                width: 47%;
+                margin: 20px auto;
+            }
+            .right{
+                /* with absolute position the element sets relative to parent */
+                position:absolute;
+                right: 24px;
+                top:20px;
+                display: inline-block;
+                border: 2px solid yellow;
+            }
+            .navbar{
+                display: inline-block;
+                margin: 12px 24px;
+            }
+            .navbar li{
+                display: inline-block;
+                font-size: 25px;
+            }
+            .navbar li a{
+                color: white;
+                text-decoration: none;/*to remove line unser a*/
+                padding: 0px 17px;
+            }
+            .navbar li a:hover,.navbar li a.active
+            { 
+                color: gray;
+                text-decoration:underline/*to remove line unser a*/
+                /* color:darkorchid; */
+                /* color: white; */
+            }
+            .left img
+            {
+               width: 100px;
+               display: inline-block;
+               margin: 0px;
+            }
+            .left div{
+                text-align: center;
+                margin: -11px;
+                line-height: 10px;
+                font-size: 18px;
+            }
+            .btn{
+                margin: 0px 9px;
+                padding: 8px 15px;
+                color: white;
+                background-color: black;
+                border: 2px solid grey;
+                border-radius: 10px;
+                font-size: 15px;
+                cursor: pointer;
+                font-family: 'Trochut', cursive;
+            }
+            .btn:hover{
+                background-color: gray;
+            }
+            .container{
+                border: 2px solid white;
+                margin: 124px 79px;
+                padding: 38px 78px;
+                width: 30%;
+                border-radius: 24px;
+            }
+            .form-group input{
+                display: block;
+                width: 73%;
+                margin: 11px auto;
+                padding: 11px 12px;
+                font-size: 18px;
+                border-radius: 12px;
+                text-align: center;
+                font-family: 'Trochut', cursive;
+            }
+            .container h1{
+                text-align: center;
+            }
+            .container button{
+                /* text-align: center; */
+                display: block;
+                margin: auto;
+                width: 30%;
+            }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img/gym-1048852_1280.png" alt="">
+            <div>Parth Fitness</div>
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+               <button class="btn">Call Us Now</button>
+               <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join The Best Gym Of Jaipur Now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Locality">
+            </div>
+            <button class="btn">submit</button>
+        </form>
+    </div>
+</body>
+</html>
